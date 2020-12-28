@@ -27,7 +27,7 @@ public class BookSelectAll {
 		    query += " SELECT book.book_id, ";
 		    query += "        book.title, ";
 		    query += "        book.pubs, ";
-		    query += "        book.pub_date, ";
+		    query += "        to_char(book.pub_date, 'yy/mm/dd'), ";
 		    query += "        author.author_id, ";
 		    query += "        author.author_name, ";
 		    query += "        author.author_desc ";
